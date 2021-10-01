@@ -91,11 +91,10 @@ tr:hover{
   border-bottom: 2px solid black;
 }
 
-.rowhead{
+.rowhead, tr{
   border-collapse:collapse;
   border-bottom: 2px solid black;
   border-right: 2px solid black;
-
 }
 
 
@@ -105,15 +104,18 @@ table{
     margin-left: auto;
     margin-right: auto;
     border-radius: 50px;
-    border-collapse: separate;
     border-spacing: 0;
 }
 
 td{
   padding: 10px;
   border-bottom: 2px solid black;
+  vertical-align: middle;
 }
 
+tbody tr:last-child td {
+  border-bottom: 0;
+}
 /* I gave you the selector, but not the property-value pair. 
 You can use Inspect Element or your editor to find selectors. */
 
@@ -156,4 +158,3 @@ footer{
 *:focus {
   border: 3px dashed #417243;
 }
-
