@@ -87,11 +87,13 @@ tr:hover{
   text-transform:uppercase;
   background-color: #7e0825;
   text-align: center;
+  border-bottom: 2px solid black;
 }
 
 .rowhead{
   border-collapse:collapse;
   border-bottom: 2px solid black;
+  border-right: 2px solid black;
 
 }
 
@@ -99,7 +101,6 @@ tr:hover{
 table{
     border: 5px solid #000000;
     text-align: center;
-    padding: 10px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 50px;
@@ -107,24 +108,27 @@ table{
     border-spacing: 0;
 }
 
-
+td{
+  padding: 10px;
+  border-bottom: 2px solid black;
+}
 
 /* I gave you the selector, but not the property-value pair. 
 You can use Inspect Element or your editor to find selectors. */
 
 thead tr:first-child th:first-child{
-  border-top-left-radius: 50px;
+  border-top-left-radius: 45px;
 }
 
 thead tr:first-child th:last-child{
-  border-top-right-radius: 50px;
+  border-top-right-radius: 45px;
 }
 
 tbody tr:last-child th:first-child{
-  border-bottom-left-radius: 50px;
+  border-bottom-left-radius: 45px;
 }
 tbody tr:last-child td:last-child {
-  border-bottom-right-radius: 50px;
+  border-bottom-right-radius: 45px;
 }
 
 
